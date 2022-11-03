@@ -4,37 +4,37 @@
 
 Maak binnen VirtualBox een Ubuntu(64bit) VM aan.
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/1.1%20VM.png)
-
+![](/Devops%20Actions%20Imgs/Github%20Actions/1.1%20VM.png)
+![](/Devops%20Actions%20Imgs/Github%20Actions/1.1%20VM.png)
 
 De virtual machine heeft  de volgende Specs wanneer we hem de eerste keer opstarten.
 Belangrijk: kies de 22.04 versie van Ubuntu en geef zeker 4GB RAM.
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/1.2%20VM%20Specs.png)
+![](/Devops%20Actions%20Imgs/Github%20Actions/1.2%20VM%20Specs.png)
 
 Doorloop de installatie en selecteer de normale Ubuntu Server
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/1.3.png)
+![](/Devops%20Actions%20Imgs/Github%20Actions/1.3.png)
 
 Blijf de standaardinstellingen volgen en kies hier voor Continue.
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/1.4.png)
+![](/Devops%20Actions%20Imgs/Github%20Actions/1.4.png)
 
 Kies hier voor een username en paswoord
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/1.5.png)
+![](/Devops%20Actions%20Imgs/Github%20Actions/1.5.png)
 
 Hier kiezen we voor OpenSSH te installeren.
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/1.6.png)
+![](/Devops%20Actions%20Imgs/Github%20Actions/1.6.png)
 
 Kies hier voor Docker, we gaan dit nu nog niet gebruiken maar later eventueel wel.
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/1.7.png)
+![](/Devops%20Actions%20Imgs/Github%20Actions/1.7.png)
 
 We kunnen inloggen en krijgen toegang tot de CLI
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/1.8.PNG)
+![](/Devops%20Actions%20Imgs/Github%20Actions/1.8.PNG)
 
 # 1.2 VM Configureren
 
@@ -48,7 +48,7 @@ sudo apt update && sudo apt upgrade -y
 
 Kies hier voor Ok
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/2.1.PNG)
+![](/Devops%20Actions%20Imgs/Github%20Actions/2.1.PNG)
 
 
 
@@ -59,25 +59,25 @@ Voor dit voorbeeld heb ik gewoon de gedeelde OPS repository gebruikt.
 
 Kies bovenaan voor Settings
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/2.2.PNG)
+![](/Devops%20Actions%20Imgs/Github%20Actions/2.2.PNG)
 
 Navigeer naar Actions -> Runners -> New Self-hosted runner
 
 Hier kan je ook meteen de reeds toegevoegde runners zien en hun status
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/2.3.PNG)
+![](/Devops%20Actions%20Imgs/Github%20Actions/2.3.PNG)
 
 Hier kiezen we bovenaan voor Linux en x64
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/2.4.PNG)
+![](/Devops%20Actions%20Imgs/Github%20Actions/2.4.PNG)
 
 Kopieer hierbij de commando's van GitHub in volgorde (makkelijker met SSH)
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/2.5.PNG)
+![](/Devops%20Actions%20Imgs/Github%20Actions/2.5.PNG)
 
 Eenmaal we aan configure komen krijgen we het volgende scherm
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/2.6.PNG)
+![](/Devops%20Actions%20Imgs/Github%20Actions/2.6.PNG)
 
 Vanaf dit punt is de installatie voltooid en kunnen we verder configureren
 
@@ -85,13 +85,13 @@ De runner group laten we (voor nu) op Default.
 
 Als naam kies ik hier voor selfhost2.
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/2.7.PNG)
+![](/Devops%20Actions%20Imgs/Github%20Actions/2.7.PNG)
 
 De labels laat ik nu ook standaard op default.
 
 De runner is succesvol geïnstalleerd ! De work folder laten we ook default staan.
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/2.8.PNG)
+![](/Devops%20Actions%20Imgs/Github%20Actions/2.8.PNG)
 
 Binnen Github zien we de runner nu actief staan. Maar nog offline
 
@@ -106,13 +106,13 @@ Tenslotte runnen we volgend commando om de runner actief te zetten
 
 Met als resultaat
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/2.10.PNG)
+![](/Devops%20Actions%20Imgs/Github%20Actions/2.10.PNG)
 
 Ook binnen Github Actions staat de runner nu op Idle en niet meer op Offline
 We kunnen nu Workflows laten lopen op deze aangemaakte runner.
 
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/2.11.PNG)
+![](/Devops%20Actions%20Imgs/Github%20Actions/2.11.PNG)
 
 
 Binnen de .Net Repository staan 2 Workflows klaar voor te testen
@@ -121,17 +121,17 @@ De Hello World echoot gewoon Hello World
 De .NET workflow test een .NET Applicatie
 
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/2.12.PNG)
+![](/Devops%20Actions%20Imgs/Github%20Actions/2.12.PNG)
 
 Probeer beide workflows eens manueel uit. Wanneer ze voltooien krijgen ze een groen vinkje.
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/2.13.PNG)
+![](/Devops%20Actions%20Imgs/Github%20Actions/2.13.PNG)
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/2.14.PNG)
+![](/Devops%20Actions%20Imgs/Github%20Actions/2.14.PNG)
 
 Op de server zelf krijgen we deze berichten
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/2.15.PNG)
+![](/Devops%20Actions%20Imgs/Github%20Actions/2.15.PNG)
 
 
 # 1.4 VM heropstarten en online brengen
@@ -143,7 +143,7 @@ Om dit op te lossen moeten we de volgende commando's uitvoeren.
 
 Voor de commando's:
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/2.16.PNG)
+![](/Devops%20Actions%20Imgs/Github%20Actions/2.16.PNG)
 
 Commando's:
 
@@ -155,9 +155,9 @@ cd actions-runner
 
 Na de commando's
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/2.17.PNG)
+![](/Devops%20Actions%20Imgs/Github%20Actions/2.17.PNG)
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/2.18.PNG)
+![](/Devops%20Actions%20Imgs/Github%20Actions/2.18.PNG)
 
 De runner is nu weer klaar om Jobs uit te voeren
 
@@ -185,7 +185,7 @@ Hier terug te vinden : https://github.com/HoGentTIN/devops-22-23-ops-a02/actions
 
 En dan de .NET core template van github Actions zelf !
 
-![](/logboek/Devops%20Actions%20Imgs/Github%20Actions/3.1.PNG)
+![](/Devops%20Actions%20Imgs/Github%20Actions/3.1.PNG)
 
 1. Begint met de naam van de workflow in dit geval.net
 
